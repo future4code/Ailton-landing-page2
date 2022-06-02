@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 150px 300px 300px 300px 300px 300px 300px 450px 100px;
+    grid-template-areas: 'redes redes redes'
+    'header header header'
+    'login login login'
+    'produtos produtos produtos'
+    'promocoes promocoes promocoes'
+    'informacoes1 informacoes1 informacoes1'
+    'informacoes2 informacoes2 informacoes2'
+    'informacoes3 informacoes3 informacoes3'
+    'rodape rodape rodape'
+    'footer footer footer';
+
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+#redes {
+    grid-area: redes;
+    background-color: red;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+#login {
+    grid-area: login;
+    background-color: aqua;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#produtos {
+    grid-area: produtos;
+    background-color: brown;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#promocoes {
+    grid-area: promocoes;
+    background-color: green;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-1 {
+    grid-area: informacoes1;
+    background-color: greenyellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-2 {
+    grid-area: informacoes2;
+    background-color: yellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-3 {
+    grid-area: informacoes3;
+    background-color: lightyellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#rodape {
+    grid-area: rodape;
+    background-color: purple;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    grid-area: footer;
+    background-color: chocolate;
+}
