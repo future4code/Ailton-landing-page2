@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+
+#redes {
+    height: 40px;
+    grid-area: redes;
+    background-color: #fa7f32;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5%;
+    padding-left: 0.5%;
+}
+
+#redes a {
+    width: 32px;
+    height: 32px;
+}
+
+.icons {
+    height: 32px;
+    width: 32px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+header {
+    grid-area: header;
+    background-color: #ff914d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+header p {
+    color: black;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+}
+
+#itens-header {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 5%
+}
+
+#itens-header p {
+    min-width: 110px;
+    text-align: center;
+}
+
+#itens-header-login {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    /* border: 1px solid; */
+}
+
+#itens-header-login img {
+    width: 20%;
+    height: 20%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+#login {
+    background-color: aqua;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#produtos {
+    background-color: brown;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#promocoes {
+    background-color: green;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-1 {
+    background-color: greenyellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-2 {
+    background-color: yellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-3 {
+    background-color: lightyellow;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#rodape {
+    background-color: rgb(83, 82, 82);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 3vh;
+}
+
+.itens-rodape {
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.itens-rodape p {
+    color: white;
+}
+
+.itens-rodape h3 {
+    color: #ff914d;
+}
+
+.itens-rodape img {
+    border-radius: 20px 20px 20px 20px;
+    width: 160px;
+    height: 140px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff914d;
+}
+
+#redes-copy img {
+    width: 32px;
+    height: 32px;
+}
+
+#texto-copy {
+    padding: 1vh;
+}
+
+#redes-copy {
+    padding: 1vh;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-device-width : 480px) {
+
+}
+
