@@ -5,90 +5,177 @@
 }
 
 #container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 150px 300px 300px 300px 300px 300px 300px 450px 100px;
-    grid-template-areas: 'redes redes redes'
-    'header header header'
-    'login login login'
-    'produtos produtos produtos'
-    'promocoes promocoes promocoes'
-    'informacoes1 informacoes1 informacoes1'
-    'informacoes2 informacoes2 informacoes2'
-    'informacoes3 informacoes3 informacoes3'
-    'rodape rodape rodape'
-    'footer footer footer';
+    display: flex;
+    flex-direction: column;
 
+
+}
+
+a {
+    text-decoration: none;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////// */
 
 #redes {
+    height: 40px;
     grid-area: redes;
-    background-color: red;
+    background-color: #fa7f32;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0.5%;
+    padding-left: 0.5%;
+}
+
+#redes a {
+    width: 32px;
+    height: 32px;
+}
+
+.icons {
+    height: 32px;
+    width: 32px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
 header {
     grid-area: header;
-    background-color: blue;
+    background-color: #ff914d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+}
+
+header p {
+    color: black;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+}
+
+#itens-header {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 5%
+}
+
+#itens-header p {
+    min-width: 110px;
+    text-align: center;
+}
+
+#itens-header-login {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    /* border: 1px solid; */
+}
+
+#itens-header-login img {
+    width: 20%;
+    height: 20%;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
 #login {
-    grid-area: login;
     background-color: aqua;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #produtos {
-    grid-area: produtos;
     background-color: brown;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #promocoes {
-    grid-area: promocoes;
     background-color: green;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-1 {
-    grid-area: informacoes1;
     background-color: greenyellow;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-2 {
-    grid-area: informacoes2;
     background-color: yellow;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-3 {
-    grid-area: informacoes3;
     background-color: lightyellow;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #rodape {
-    grid-area: rodape;
-    background-color: purple;
+    background-color: rgb(83, 82, 82);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    padding: 3vh;
+}
+
+.itens-rodape {
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.itens-rodape p {
+    color: white;
+}
+
+.itens-rodape h3 {
+    color: #ff914d;
+}
+
+.itens-rodape img {
+    border-radius: 20px 20px 20px 20px;
+    width: 160px;
+    height: 140px;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff914d;
+}
+
+#redes-copy img {
+    width: 32px;
+    height: 32px;
+}
+
+#texto-copy {
+    padding: 1vh;
+}
+
+#redes-copy {
+    padding: 1vh;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-footer {
-    grid-area: footer;
-    background-color: chocolate;
+@media screen and (max-device-width : 480px) {
+
 }
+
