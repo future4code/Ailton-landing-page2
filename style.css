@@ -189,8 +189,75 @@ header img {
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
-
+* {
+    
+}
 @media screen and (max-device-width : 480px) {
+
+/* /// FAZENDO A RESPONSIVIDADE /// */
+/* /// TESTE COM TRANSFORM /// */
+/* header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+#itens-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: safe center;
+    justify-content: space-around;
+    font-weight: bold;
+    /* align-items: center; */
+    gap: 8px;
+    padding: 8px;
+}
+
+#itens-header-login {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    font-weight: bold;
+    /* border: 1px solid; */
+}
+
+header img {
+   transform: scale(0.8,0.8);
+}
+
+#itens-header-login img {
+    
+    width: 80%;
+    height: 80%;
+    /* transform: scale(0.8); */
+}
+
+#rodape {
+    background-color: rgb(83, 82, 82);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 3vh;
+   
+}
+
+.itens-rodape {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 }
 
