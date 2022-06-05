@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container {
@@ -15,27 +16,22 @@ a {
     text-decoration: none;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////////// */
-
-#redes {
-    height: 40px;
-    grid-area: redes;
-    background-color: #fa7f32;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    gap: 0.5%;
-    padding-left: 0.5%;
+button {
+    background-color: #fc690e;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    transition: 0.3s ease all;
+    opacity: 0.9;
+    text-transform: uppercase;
+    color: light;
+    font-weight: bold;
 }
 
-#redes a {
-    width: 32px;
-    height: 32px;
-}
-
-.icons {
-    height: 32px;
-    width: 32px;
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
@@ -51,6 +47,13 @@ header {
 
 header p {
     color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.1s ease all;
+}
+
+header p:hover {
+    transform: scale(1.05);
 }
 
 header img {
@@ -83,48 +86,213 @@ header img {
 #itens-header-login img {
     width: 20%;
     height: 20%;
+    cursor: pointer;
+}
+
+#itens-header-login img:hover {
+    transform: scale(1.05);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 
 #login {
-    background-color: aqua;
+    background-image: linear-gradient(to bottom, #ffac10, #fca417);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#login img {
+    /* padding: 3vh 0; */
+    width: 50%;
+    height: auto;
+}
+
+#login p {
+    font-size: 2rem;
+    padding: 1vh 1vh;
+    color: white;
+}
+
+#login h1 {
+    padding: 1vh;
+}
+
+#login-conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-conteudo button {
+    margin-top: 10vh;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #produtos {
-    background-color: brown;
+    /* background-color: lightgreen; */
+    /* background-image: linear-gradient(to bottom, #faa010, white); */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+#produtos-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 7vh;
+    text-align: left;
+}
+
+#edit-img-produtos {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+#produtos img {
+    width: 80%;
+    /* padding: 5vh; */
+    box-shadow: 7px 7px 8px #fc690e;
+    border-radius: 10px 10px;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #promocoes {
-    background-color: green;
+    /* background-color: green;  */
+    display: flex;
+    justify-content: space-around;
+}
+
+#promocoes-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 7vh;
+}
+
+#edit-img-promocoes {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+#promocoes img {
+    width: 80%;
+    /* padding: 5vh; */
+    box-shadow: 7px 7px 8px 2px #fc690e;
+    border-radius: 10px 10px;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-1 {
-    background-color: greenyellow;
+    background-image: url(img/sobre-nos.jpeg);
+    background-size: cover;
+    padding: 10%;
+}
+
+#texto-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    gap: 5vh;
+    text-align: justify;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-2 {
-    background-color: yellow;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+#informacoes-2-img {
+    width: 45%;
+    /* height: 70%; */
+    padding: 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacoes-2-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px 5px;
+    box-shadow: 7px 7px 8px 2px #fc690e;
+}
+
+#texto-informacoes-2 {
+    /* height: 70%; */
+    width: 50%;
+    /* margin-right: 5vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 2vh;
+    gap: 4vh;
+    /* margin-top: 1vh; */
+    text-align: justify;
+}
+
+#texto-informacoes-2 button {
+    margin-top: 4vh;
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #informacoes-3 {
     background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 10vh;
 }
+
+#caixinha-perguntas {
+    border: 1px solid black ;
+    padding: 2vh;
+    box-shadow: 4px 4px #ff914d;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+#caixinha-perguntas:hover {
+    transform: scale(1.01);
+}
+
+#caixinha-perguntas img {
+    width: 24px;
+    height: 24px;
+}
+
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 #rodape {
-    background-color: rgb(83, 82, 82);
+    background-color: rgb(99, 98, 98);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -142,6 +310,11 @@ header img {
 
 .itens-rodape p {
     color: white;
+    transition: 0.3s ease all;
+}
+
+.itens-rodape p:hover {
+    transform: scale(1.05);
 }
 
 .itens-rodape h3 {
@@ -173,9 +346,77 @@ header img {
     padding: 1vh;
 }
 
+#redes-copy img:hover {
+    transform: scale(1.1);
+}
+
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-device-width : 480px) {
 
+/* /// FAZENDO A RESPONSIVIDADE /// */
+/* /// TESTE COM TRANSFORM /// */
+/* header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+#itens-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: safe center;
+    justify-content: space-around;
+    font-weight: bold;
+    /* align-items: center; */
+    gap: 8px;
+    padding: 8px;
 }
 
+#itens-header-login {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    font-weight: bold;
+    /* border: 1px solid; */
+}
+
+header img {
+   transform: scale(0.8,0.8);
+}
+
+#itens-header-login img {
+    
+    width: 80%;
+    height: 80%;
+    /* transform: scale(0.8); */
+}
+
+#rodape {
+    background-color: rgb(83, 82, 82);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 3vh;
+   
+}
+
+.itens-rodape {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+}
