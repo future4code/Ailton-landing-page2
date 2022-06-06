@@ -418,5 +418,106 @@ header img {
     flex-direction: column;
     gap: 4px;
 }
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+#login {
+    background-image: url(img/porquinho\ 1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+#login img {
+    /* padding: 3vh 0; */
+    width: 0%;
+    height: auto;
+}
+
+#login p {
+    font-size: 2rem;
+    padding: 1vh 1vh;
+    color: white;
+}
+
+#login h1 {
+    padding: 1vh;
+    font-size: 1.8rem;
+}
+
+#login-conteudo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#login-conteudo button {
+    margin: 3vh 0;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+#produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6vh;
+}
+
+#edit-img-produtos {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#promocoes {
+    /* background-color: green;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit-img-promocoes {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#informacoes-2 {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+#informacoes-2-img {
+    width: 80%;
+    /* height: 70%; */
+    padding: 3vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacoes-2-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px 5px;
+    box-shadow: 7px 7px 8px 2px #fc690e;
+}
 }
