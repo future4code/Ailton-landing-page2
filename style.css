@@ -26,6 +26,7 @@ button {
     text-transform: uppercase;
     color: light;
     font-weight: bold;
+    position: relative;
 }
 
 button:hover {
@@ -43,6 +44,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header p {
@@ -361,6 +365,10 @@ header img {
     flex-direction: column;
     flex-wrap: wrap;
 } */
+
+header {
+    position: relative;
+}
 
 #itens-header {
     width: 100%;
